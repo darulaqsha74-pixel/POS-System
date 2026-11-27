@@ -60,3 +60,54 @@ body {
     min-width: 0;
 }
 
+/* Hero Section */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("Assest/WhatsApp Image 2026-11-24 at 15.23.26.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Welcome Content */
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h3 {
+    color: #650D26;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    color: #650D26;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    color: #7C3047;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.strt-btn {
+  padding: 8px 18px;
+  background: #650D26;
+  color: #fff;
+  border: 1px solid 650D26;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.strt-btn:hover {
+  background: #A94360;
+  color: black;
+}
