@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Main Div */
+.MainDiv {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.SideBar {
+    width: 230px;
+    min-width: 230px;
+    height: 100vh;
+    background-color: #A94360;
+    padding: 25px 15px;
+}
+
+/* Heading */
+.Heading {
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+/* Menu Items */
+.listitem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.listitem a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.listitem:hover {
+    background-color: #650D26;
+}
+
+/* Home Image Area */
+.ImageHome {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("Assest/productImage.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Welcome Content */
+
+.LargePanel {
+    width: 100%;
+    padding: 30px;
+}
+
+.headingPanel {
+    width: 100%;
+    padding: 20px 25px;
+    background-color: #fffafa;
+    border-radius: 12px;
+}
+
+.headingPanel h1{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #650D26;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.headingPanel p{
+   color: #A94360;
+   font-size: 16px;
+   margin-left: 42px;
+   margin-bottom: 22px;
+}
+
+.headingPanel input{
+    width: 50%;
+    padding: 13px 18px;
+    border: 1px solid #D9A5B5;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    background-color: white;
+}
+
+.headingPanel input :focus{
+    border: 2px solid #650D26;
+    box-shadow: 0 0 5px #D9A5B5;
+}
+
+.headingPanel input ::placeholder {
+    color: #B77B8D;
+}
+
+
