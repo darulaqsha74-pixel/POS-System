@@ -1,3 +1,7 @@
+/* =========================
+   COMMON CSS
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,22 +12,30 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Main Div */
+
+/* =========================
+   MAIN DIV
+========================= */
+
 .MainDiv {
     display: flex;
+    width: 100%;
     min-height: 100vh;
 }
 
-/* Sidebar */
+
+/* =========================
+   SIDEBAR
+========================= */
+
 .SideBar {
-    width: 230px;
-    min-width: 230px;
-    height: 100vh;
+    width: 15%;
+    min-width: 200px;
+    min-height: 100vh;
     background-color: #A94360;
     padding: 25px 15px;
 }
 
-/* Heading */
 .Heading {
     color: white;
     text-align: center;
@@ -33,7 +45,6 @@ body {
     line-height: 1.5;
 }
 
-/* Menu Items */
 .listitem {
     display: flex;
     align-items: center;
@@ -54,41 +65,68 @@ body {
     background-color: #650D26;
 }
 
-/* Home Image Area */
+
+/* =========================
+   MAIN IMAGE AREA
+========================= */
+
 .ImageHome {
-    flex: 1;
+    width: 85%;
     min-width: 0;
 }
 
-/* Hero Section */
 .hero {
     width: 100%;
     min-height: 100vh;
+
     background-image: url("Assest/productImage.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
+    padding: 20px;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.hero-content {
     display: flex;
-    align-items: center;
-    padding: 40px;
-}
-
-/* Welcome Content */
-
-.LargePanel {
     width: 100%;
-    padding: 30px;
+    min-height: calc(100vh - 40px);
+    gap: 15px;
+    align-items: stretch;
 }
+
+
+/* =========================
+   PRODUCT PANEL
+========================= */
+
+.ProductPanel {
+    flex: 50;
+    min-width: 0;
+    background-color: rgba(255, 250, 250, 0.95);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+
+/* =========================
+   PRODUCT HEADING
+========================= */
 
 .headingPanel {
     width: 100%;
     padding: 20px 25px;
-    background-color: #fffafa;
+    background-color: #FFFAFA;
     border-radius: 12px;
+    gap: 15px;
 }
 
-.headingPanel h1{
+.headingPanel h1 {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -97,15 +135,20 @@ body {
     margin-bottom: 8px;
 }
 
-.headingPanel p{
-   color: #A94360;
-   font-size: 16px;
-   margin-left: 42px;
-   margin-bottom: 22px;
+.headingPanel p {
+    color: #A94360;
+    font-size: 16px;
+    margin-left: 42px;
+    margin-bottom: 22px;
 }
 
-.headingPanel input{
-    width: 50%;
+
+/* =========================
+   SEARCH INPUT
+========================= */
+
+.headingPanel input {
+    width: 60%;
     padding: 13px 18px;
     border: 1px solid #D9A5B5;
     border-radius: 10px;
@@ -114,13 +157,66 @@ body {
     background-color: white;
 }
 
-.headingPanel input :focus{
+.headingPanel input:focus {
     border: 2px solid #650D26;
     box-shadow: 0 0 5px #D9A5B5;
 }
 
-.headingPanel input ::placeholder {
+.headingPanel input::placeholder {
     color: #B77B8D;
 }
 
+.search{
+    gap: 80px;
+    align-items: center;
+    display: flex;
+}
 
+
+.add-btn {
+  padding: 8px 18px;
+  background: #650D26;
+  color: #fff;
+  border: 1px solid 650D26;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.add-btn:hover {
+  background: #A94360;
+  color: black;
+}
+
+
+/* =========================
+   PRODUCT ITEM PANEL
+========================= */
+
+.itemPanel {
+    width: 100%;
+    margin-top: 20px;
+    min-height: 300px;
+    background-color: #FFFAFA;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+
+/* =========================
+   BILLING PANEL
+========================= */
+
+.BillingPanel {
+    flex: 30;
+    min-width: 0;
+    background-color: rgba(255, 250, 250, 0.95);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.BillingPanel h1 {
+    color: #650D26;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
