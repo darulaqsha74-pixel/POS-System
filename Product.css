@@ -213,6 +213,13 @@ body {
     text-align: center;
 }
 
+.Box img{
+    width: 10px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
 /* =========================
    BILLING PANEL
 ========================= */
