@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Main Div */
+.MainDiv {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.SideBar {
+    width: 230px;
+    min-width: 230px;
+    height: 100vh;
+    background-color: #A94360;
+    padding: 25px 15px;
+}
+
+/* Heading */
+.Heading {
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+/* Menu Items */
+.listitem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.listitem a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.listitem:hover {
+    background-color: #650D26;
+}
+
+/* Home Image Area */
+.ImageHome {
+    flex: 1;
+    min-width: 0;
+}
+
