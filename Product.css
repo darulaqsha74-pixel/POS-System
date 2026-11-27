@@ -1,6 +1,4 @@
-/* =========================
-   COMMON CSS
-========================= */
+/*  COMMON CSS */
 
 * {
     margin: 0;
@@ -13,9 +11,7 @@ body {
 }
 
 
-/* =========================
-   MAIN DIV
-========================= */
+/* MAIN DIV */
 
 .MainDiv {
     display: flex;
@@ -24,9 +20,7 @@ body {
 }
 
 
-/* =========================
-   SIDEBAR
-========================= */
+/* SIDEBAR */
 
 .SideBar {
     width: 15%;
@@ -66,9 +60,7 @@ body {
 }
 
 
-/* =========================
-   MAIN IMAGE AREA
-========================= */
+/* MAIN IMAGE AREA */
 
 .ImageHome {
     width: 85%;
@@ -88,9 +80,7 @@ body {
 }
 
 
-/* =========================
-   MAIN CONTENT
-========================= */
+/*  MAIN CONTENT */
 
 .hero-content {
     display: flex;
@@ -101,9 +91,7 @@ body {
 }
 
 
-/* =========================
-   PRODUCT PANEL
-========================= */
+/* PRODUCT PANEL */
 
 .ProductPanel {
     flex: 50;
@@ -111,12 +99,13 @@ body {
     background-color: rgba(255, 250, 250, 0.95);
     border-radius: 12px;
     padding: 20px;
+    border: 1px solid #650D26;
 }
 
 
-/* =========================
-   PRODUCT HEADING
-========================= */
+
+   /* PRODUCT HEADING */
+
 
 .headingPanel {
     width: 100%;
@@ -143,9 +132,7 @@ body {
 }
 
 
-/* =========================
-   SEARCH INPUT
-========================= */
+/* SEARCH INPUT  */
 
 .headingPanel input {
     width: 60%;
@@ -178,7 +165,7 @@ body {
   background: #650D26;
   color: #fff;
   border: 1px solid 650D26;
-  border-radius: 20px;
+  border-radius: 10px;
   text-decoration: none;
   font-size: 14px;
   transition: 0.3s;
@@ -189,23 +176,23 @@ body {
 }
 
 
-/* =========================
-   PRODUCT ITEM PANEL
-========================= */
+/*  PRODUCT ITEM PANEL */
 
 .itemPanel {
     width: 100%;
     margin-top: 20px;
     min-height: 300px;
     background-color: #FFFAFA;
-    border-radius: 12px;
+    border-radius: 2px;
     padding: 15px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+    gap: 30px;
+    text-align: center;
+    gap: 10px;
 }
 
-.Box{
+.box{
     background-color: white;
     border: 1px solid #D9A5B5;
     border-radius: 10px;
@@ -213,16 +200,53 @@ body {
     text-align: center;
 }
 
-.Box img{
-    width: 10px;
+.box img{
+    width: 100%;
+    height: 100px;
+}
+
+.box img{
+    width: 100%;
     height: 100px;
     object-fit: contain;
     display: block;
+    margin: auto;
 }
 
-/* =========================
-   BILLING PANEL
-========================= */
+.box h4{
+    color: #650D26;
+    font-size: 20px;
+}
+
+.box h5{
+    color: #B77B8D;
+     font-size: 18px;
+}
+
+.box p{
+
+}
+
+.box button{
+  padding: 8px 18px;
+  background: #650D26;
+  color: #fff;
+  border: 1px solid 650D26;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  width: 50%;
+  min-height: 15px;
+}
+.box button:hover {
+  background: #A94360;
+  color: black;
+}
+
+
+
+/* BILLING PANEL */
 
 .BillingPanel {
     flex: 30;
@@ -230,6 +254,7 @@ body {
     background-color: rgba(255, 250, 250, 0.95);
     border-radius: 12px;
     padding: 20px;
+    border: 3px solid #650D26;
 }
 
 .BillingPanel h1 {
