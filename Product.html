@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LumiMart</title>
     <link rel="stylesheet" href="Product.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
 
             <div class="listitem">
                 <img width="20" height="20" src="https://img.icons8.com/fluency-systems-filled/48/billing-machine.png"
-                    alt="billing-machine" /><a href="Billing.html"> Billing </a>
+                    alt="billing-machine" /><a> Billing </a>
             </div>
 
         </div>
@@ -135,11 +136,76 @@
                                     </button>
                                 </div>
                             </div>
+                        </div>
 
+                        <!-- Bill Summary -->
+                        <div class="bill-summary">
 
+                            <div class="summary-raw">
+                                <span>Subtotal :</span>
+                                <span>Rs. 4997</span>
+                            </div>
 
+                            <div class="summary-raw">
+                                <span>Discount :</span>
+                                <input type="number" placeholder="0%">
+                            </div>
+
+                            <div class="summary-raw">
+                                <span>Tax (10%):</span>
+                                <span>Rs. 500</span>
+                            </div>
+
+                            <div class="total-raw">
+                                <span>Total :</span>
+                                <div class="totalamount">
+                                    <span>Rs. 5497</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment-->
+                        <div class="payment">
+
+                            <div class="headingPanel">
+                                <h1><img width="50" height="50"
+                                        src="https://img.icons8.com/ios-filled/50/card-in-use.png" alt="card-in-use" />
+                                    Payment Methode
+                                </h1>
+                            </div>
+
+                            <div class="paymentmethode">
+                                <div class="cardPayment">
+                                    <input type="radio" name="payment" value="card">
+                                    <i class="bi bi-credit-card-fill"></i>
+                                    Card
+                                </div>
+
+                                <div class="cardPayment">
+                                    <input type="radio" name="payment" value="cash">
+                                    <i class="bi bi-cash-coin"></i>
+                                    Cash
+                                </div>
+
+                            </div>
 
                         </div>
+
+                        <!-- Cash Details -->
+                        <div class="cash-section">
+
+                            <label>Cash Received :</label>
+                            <input type="number" placeholder="Enter amount">
+
+                            <label>Change :</label>
+                            <input type="text" value="Rs. 0" readonly>
+
+                        </div>
+
+                        <!-- Complete Payment -->
+                        <button class="complete-btn">
+                            ✓ Complete Payment
+                        </button>
 
                     </div>
 

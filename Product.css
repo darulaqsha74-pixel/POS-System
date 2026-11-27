@@ -325,6 +325,146 @@ body {
     padding: 0;
     font-size: 20px;
     cursor: pointer;  
-    background-color: #f0acbf;
-    border: 1px solid #f0acbf;
+    background-color: #d77692;
+    border: 1px solid #d77692;
+}
+/* BILL SUMMARY */
+.bill-summary {
+    width: 100%;
+    background-color: #d77692;
+    border-radius: 12px;
+    padding: 18px;
+    margin-top: 20px;
+}
+
+.summary-raw {
+    width: 35%;
+    margin-left: auto;
+}
+
+.summary-raw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #650D26;
+}
+
+.summary-raw div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.summary-raw input {
+    width: 65px;
+    padding: 8px;
+    border: 1px solid #d77692;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.total-raw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #A94360;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #650D26;
+    padding-left: 40%;
+}
+
+.total-row span:last-child {
+    background-color: #650D26;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 9px;
+}
+.totalamount{
+    background-color: #650D26;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 9px;
+}
+.paymentmethode i{
+    font-size: 20px;
+    color: #650D26;
+    margin-right: 6px;
+}
+
+.paymentmethode {
+    display: flex;
+    gap: 8px;
+}
+.cardPayment{
+    width: 200px;
+    flex: 1;
+    text-align: center;
+    padding: 10px 5px;
+    border: 1px solid #A94360;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 0;
+    font-size: 20px;
+    color: #650D26;
+    font-weight: bold;
+}
+
+.paymentmethode :hover{
+   background-color: #650D26;
+   color: #fff;
+}
+
+.paymentmethode input {
+    accent-color: #650D26;
+}
+
+/* CASH DETAILS */
+.cash-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.cash-section label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cash-section input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #D9A5B5;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.cash-section input:focus {
+    border: 2px solid #650D26;
+}
+
+/* COMPLETE BUTTON */
+.complete-btn {
+    width: 100%;
+    padding: 13px;
+    margin-top: 15px;
+    background-color: #650D26;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.complete-btn:hover {
+    background-color: #A94360;
 }
